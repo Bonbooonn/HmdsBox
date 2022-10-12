@@ -6,6 +6,9 @@
 ## Install Virtual box
 ### https://www.virtualbox.org/wiki/Downloads
 
+Change config.vm.synced_folder according to your own workspace directory
+
 ## Go to vagrant box directory
 ## Open terminal
 ## Type Vagrant up
+

@@ -23,8 +23,12 @@ Vagrant.configure("2") do |config|
 
         # Provisions
         # hmds.vm.provision "shell", path: "./provisions/install.sh"
-        hmds.vm.provision "vhosts", type: "shell", path: "./provisions/vhosts.sh", run: "always"
+
+        # Unlink default nginx conf
+        hmds.vm.provision "shell", inline: "unlink /etc/nginx/sites-enabled/default"
         hmds.vm.provision "db_setup", type: "shell", path: "./provisions/mysql.sh"
+        hmds.vm.provision "vhosts", type: "shell", path: "./provisions/vhosts.sh", run: "always"
+        hmds.vm.provision "status", type: "shell", path: "./provisions/status.sh", run: "always"
 
         # Provider Settings
         config.vm.provider "virtualbox" do |vb|

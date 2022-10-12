@@ -30,6 +30,9 @@ Vagrant.configure("2") do |config|
         hmds.vm.provision "vhosts", type: "shell", path: "./provisions/vhosts.sh", run: "always"
         hmds.vm.provision "status", type: "shell", path: "./provisions/status.sh", run: "always"
 
+        # Manual Provisions
+        hmds.vm.provision "manual_provisions", type: "shell", path: "./provisions/manual_provisions.sh", run: "never"
+
         # Provider Settings
         config.vm.provider "virtualbox" do |vb|
             vb.name = "hmds-box"

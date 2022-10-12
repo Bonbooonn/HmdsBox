@@ -2,9 +2,7 @@ echo -e "\n --- Nginx Vhost Configuration --- \n"
 # Nginx
 
 # Unlink default nginx conf
-if [ -f /etc/nginx/sites-enabled/default ]; then
-    rm /etc/nginx/sites-enabled/default
-fi
+unlink /etc/nginx/sites-enabled/default
 
 # Link files
 ln -sf /etc/nginx/sites-available/* /etc/nginx/sites-enabled/

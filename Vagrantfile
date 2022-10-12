@@ -22,7 +22,7 @@ Vagrant.configure("2") do |config|
         hmds.vm.box_url = "hmdsvbox.box"
 
         # Provisions
-        hmds.vm.provision "shell", path: "./provisions/install.sh"
+        # hmds.vm.provision "shell", path: "./provisions/install.sh"
         hmds.vm.provision "vhosts", type: "shell", path: "./provisions/vhosts.sh", run: "always"
         hmds.vm.provision "db_setup", type: "shell", path: "./provisions/mysql.sh"
 

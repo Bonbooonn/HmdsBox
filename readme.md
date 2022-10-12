@@ -6,11 +6,12 @@
 ## Install Virtual box
 ### https://www.virtualbox.org/wiki/Downloads
 
+## Run Vagrant box setup
 Change config.vm.synced_folder according to your own workspace directory
 
-## Go to vagrant box directory
-## Open terminal
-## Type Vagrant up
+Go to vagrant box directory
+Open terminal
+Type Vagrant up
 
 ## To run individual provisions
 vagrant provision --provision-with provision_name

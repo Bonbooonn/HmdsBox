@@ -9,6 +9,8 @@
 ## Run Vagrant box setup
 Change config.vm.synced_folder according to your own workspace directory
 
+Create/Change hosts files according to your own setup in the directory
+
 Go to vagrant box directory
 
 Open terminal

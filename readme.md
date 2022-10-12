@@ -12,3 +12,6 @@ Change config.vm.synced_folder according to your own workspace directory
 ## Open terminal
 ## Type Vagrant up
 
+## To run individual provisions
+### vagrant provision --provision-with provision_name
+

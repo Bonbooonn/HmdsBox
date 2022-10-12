@@ -13,5 +13,8 @@ Change config.vm.synced_folder according to your own workspace directory
 ## Type Vagrant up
 
 ## To run individual provisions
-### vagrant provision --provision-with provision_name
+vagrant provision --provision-with provision_name
 
+## Manual Provision
+### Only run this provision if you have not created the APP_KEY in the app
+vagrant provision --provision-with manual_provisions

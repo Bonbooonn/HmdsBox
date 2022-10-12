@@ -1,4 +1,4 @@
-# HMDS Local DEV Environment
+# HMDS Local DEV Environment LEMP STACK
 
 ## Install vagrant
 ### https://www.vagrantup.com/downloads

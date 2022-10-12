@@ -1,5 +1,11 @@
 # HMDS Local DEV Environment LEMP STACK
 
+# Environment
+PHP v8.1
+Nginx
+MySQL v8
+
+
 ## Install vagrant
 ### https://www.vagrantup.com/downloads
 

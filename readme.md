@@ -31,4 +31,5 @@ vagrant provision --provision-with provision_name
 ## Manual Provisions
 ### Only run this provision once, should be done with first installation
 vagrant provision --provision-with laravel_key_generate
+
 vagrant provision --provision-with componser_run

@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
 
         # Manual Provisions
         hmds.vm.provision "laravel_key_generate", type: "shell", path: "./provisions/laravel_key_generate.sh", run: "never"
-        hmds.vm.provision "componser_run", type: "shell", path: "./provisions/laravel_key_generate.sh", run: "never"
+        hmds.vm.provision "componser_run", type: "shell", path: "./provisions/composer_run.sh", run: "never"
 
         # Provider Settings
         config.vm.provider "virtualbox" do |vb|

@@ -35,3 +35,7 @@ vagrant provision --provision-with composer_run
 vagrant provision --provision-with db_setup
 
 vagrant provision --provision-with laravel_key_generate
+
+
+## If there will be a problem in connecting through mysql server
+In windows go to ~/.ssh/ and remove the entry inside known_hosts file

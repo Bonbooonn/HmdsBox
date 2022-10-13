@@ -33,3 +33,5 @@ vagrant provision --provision-with provision_name
 vagrant provision --provision-with laravel_key_generate
 
 vagrant provision --provision-with componser_run
+
+vagrant provision --provision-with db_setup

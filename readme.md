@@ -28,6 +28,6 @@ Type Vagrant up
 ## To run individual provisions
 vagrant provision --provision-with provision_name
 
-## Manual Provision
-### Only run this provision if you have not created the APP_KEY in the app
+## Manual Provisions
+### Only run this provision once, should be done with first installation
 vagrant provision --provision-with manual_provisions

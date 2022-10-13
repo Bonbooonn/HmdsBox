@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "hmds" do |hmds|
         # Box info
         hmds.vm.box = "hmds.box"
-        hmds.vm.box_url = "hmdsvbox.box"
+        hmds.vm.box_url = "hmdsbox.box"
 
         # Provisions
         # hmds.vm.provision "shell", path: "./provisions/install.sh"
@@ -31,7 +31,8 @@ Vagrant.configure("2") do |config|
         hmds.vm.provision "status", type: "shell", path: "./provisions/status.sh", run: "always"
 
         # Manual Provisions
-        hmds.vm.provision "manual_provisions", type: "shell", path: "./provisions/manual_provisions.sh", run: "never"
+        hmds.vm.provision "laravel_key_generate", type: "shell", path: "./provisions/laravel_key_generate.sh", run: "never"
+        hmds.vm.provision "componser_run", type: "shell", path: "./provisions/laravel_key_generate.sh", run: "never"
 
         # Provider Settings
         config.vm.provider "virtualbox" do |vb|

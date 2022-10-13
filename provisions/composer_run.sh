@@ -12,5 +12,5 @@ php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 echo -e "\n --- Installing Composer END --- \n"
 
 
-cd /var/www/hospital
+cd /var/www/hmds_api
 composer install

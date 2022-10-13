@@ -2,7 +2,7 @@ server {
     listen 80;
     server_name api.hmds.local;
 
-    root /var/www/hospital/public;
+    root /var/www/hmds_api/public;
 
     index index.php;
 

@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
 
     # Sync folders
     # Change sync folders according to your own setup
-    config.vm.synced_folder "C:/workspace", "/var/www/"
-    config.vm.synced_folder "C:/vagrant/hosts", "/etc/nginx/sites-available/"
+    config.vm.synced_folder "E:/www", "/var/www/"
+    config.vm.synced_folder "E:/hmds_box/hosts", "/etc/nginx/sites-available/"
 
     # Hmds box settings
     config.vm.define "hmds" do |hmds|
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
         # Unlink default nginx conf
         hmds.vm.provision "shell", inline: "unlink /etc/nginx/sites-enabled/default"
-        hmds.vm.provision "shell", inline: "cp /var/www/hospital/.env.example /var/www/hospital/.env"
+        hmds.vm.provision "shell", inline: "cp /var/www/hmds_api/.env.example /var/www/hmds_api/.env"
         hmds.vm.provision "vhosts", type: "shell", path: "./provisions/vhosts.sh", run: "always"
         hmds.vm.provision "status", type: "shell", path: "./provisions/status.sh", run: "always"
 

@@ -11,7 +11,7 @@ mysql --user='root' --password="$DBPASSWORD" -e "CREATE DATABASE IF NOT EXISTS $
 
 
 # Laravel Migrations
-cd /var/www/hospital 
+cd /var/www/hmds_api 
 php artisan migrate
 
 

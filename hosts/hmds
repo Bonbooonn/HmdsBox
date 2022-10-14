@@ -1,16 +1,6 @@
 server {
     listen 80;
-    server_name api.hmds.net;
-
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name api.hmds.net;
-
-    ssl_certificate /etc/nginx/ssl/hmds.crt;
-    ssl_certificate_key /etc/nginx/ssl/hmds.key;
+    server_name api.hmds.local;
 
     root /var/www/hmds_api/public;
 

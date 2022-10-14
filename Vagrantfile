@@ -15,7 +15,6 @@ Vagrant.configure("2") do |config|
     # Change sync folders according to your own setup
     config.vm.synced_folder "E:/www", "/var/www/"
     config.vm.synced_folder "./hosts", "/etc/nginx/sites-available/"
-    config.vm.synced_folder "./ssl", "/etc/nginx/ssl/"
 
     # Hmds box settings
     config.vm.define "hmds" do |hmds|

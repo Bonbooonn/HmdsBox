@@ -1,20 +1,9 @@
 server {
     listen 80;
-    server_name hmds.net www.hmds.net;
-
-    return 301 https://$server_name$request_uri;
-}
-
-server {
-    listen 443 ssl;
-    server_name hmds.net www.hmds.net;
-
-    ssl_certificate /etc/nginx/ssl/hmds.crt;
-    ssl_certificate_key /etc/nginx/ssl/hmds.key;
+    server_name hmds.local www.hmds.local;
 
     location / {
         root /var/www/hospital-main;
         index index.php index.html index.html;
     }
-
 }

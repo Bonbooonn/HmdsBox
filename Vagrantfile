@@ -4,9 +4,9 @@
 Vagrant.configure("2") do |config|
 
     # ssh
-    config.ssh.forward_agent = true
-    config.ssh.username = "vagrant"
-    config.ssh.password = "vagrant"
+    config.ssh.username = "vagrant"  
+    config.ssh.password = "vagrant"  
+    config.ssh.insert_key = false 
 
     # Network Settings
     config.vm.network "private_network", ip: "192.168.33.11"
@@ -14,7 +14,8 @@ Vagrant.configure("2") do |config|
     # Sync folders
     # Change sync folders according to your own setup
     config.vm.synced_folder "E:/www", "/var/www/"
-    config.vm.synced_folder "E:/hmds_box/hosts", "/etc/nginx/sites-available/"
+    config.vm.synced_folder "./hosts", "/etc/nginx/sites-available/"
+    config.vm.synced_folder "./ssl", "/etc/nginx/ssl/"
 
     # Hmds box settings
     config.vm.define "hmds" do |hmds|

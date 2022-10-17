@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name api.hmds.local;
+    server_name api.hmds.test;
 
     root /var/www/hmds_api/public;
 

@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name hmds.local www.hmds.local;
+    server_name hmds.test www.hmds.test;
 
     location / {
         root /var/www/hospital-main;

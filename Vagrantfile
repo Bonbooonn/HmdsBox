@@ -39,8 +39,8 @@ Vagrant.configure("2") do |config|
         # Provider Settings
         config.vm.provider "virtualbox" do |vb|
             vb.name = "hmds-box"
-            vb.memory = 2048
-            vb.cpus = 4
+            vb.memory = 1096
+            vb.cpus = 1
         end
     end
 end
